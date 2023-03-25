@@ -9,7 +9,7 @@ import jakarta.servlet.annotation.*;
 @WebServlet("/module1")
 public class Module1Servlet extends HttpServlet {
     private String message;
-
+    private String message2;
     public void init() {
         message = "Модуль 1";
     }
