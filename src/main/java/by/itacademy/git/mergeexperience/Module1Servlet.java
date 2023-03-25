@@ -19,7 +19,7 @@ public class Module1Servlet extends HttpServlet {
         // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        out.println("<h2>" + message + "</h2>");
+        out.println("<h1>" + message + "</h1>");
 
         out.println("<table>");
         for (Module1Topics value : Module1Topics.values())
