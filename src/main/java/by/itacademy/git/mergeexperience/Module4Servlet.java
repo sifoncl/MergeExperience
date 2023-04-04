@@ -25,7 +25,7 @@ public class Module4Servlet extends HttpServlet {
         out.println("<h1>" + message + "</h1>");
 
 
-        out.println("<a href='/'>Назад</a>");
+        out.println("<br/><a href=\"index.jsp\"'/'>&#9664</a>");
         out.println("</body></html>");
     }
 
