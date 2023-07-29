@@ -1,5 +1,7 @@
-package by.itacademy.git.mergeexperience;
+package by.javaguru.git.mergeexperience;
 
+
+import by.javaguru.git.mergeexperience.topics.Module3Topics;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -8,12 +10,12 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/module4")
-public class Module4Servlet extends HttpServlet {
+@WebServlet("/module3")
+public class Module3Servlet extends HttpServlet {
     private String message;
 
     public void init() {
-        message = "Модуль 4";
+        message = "Модуль 3";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -23,9 +25,18 @@ public class Module4Servlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
         out.println("<h1>" + message + "</h1>");
+        out.println("<table>");
+        for (Module3Topics value : Module3Topics.values())
+            out.println("<tr><td>"
+                    + value.getOrder() + "</td><td>"
+                    + value.getTopic() + "</td><td>"
+                    + value.getDesc()
+                    + "</td><td><a href=''>Подробнее</a>"
+                    + "</td></tr>");
+
+        out.println("</table>");
 
 
-        out.println("<br/><a href=\"index.jsp\"'/'>&#10232;</a>");
         out.println("</body></html>");
     }
 

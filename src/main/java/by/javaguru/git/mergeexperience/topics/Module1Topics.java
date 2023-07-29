@@ -1,4 +1,4 @@
-package by.itacademy.git.mergeexperience.topics;
+package by.javaguru.git.mergeexperience.topics;
 
 public enum Module1Topics {
     JAKARTA(1, "Jakarta ", "Обзор java enterprise технологий"),

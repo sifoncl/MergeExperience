@@ -1,8 +1,8 @@
-package by.itacademy.git.mergeexperience;
+package by.javaguru.git.mergeexperience;
 
 import java.io.*;
 
-import by.itacademy.git.mergeexperience.topics.Module1Topics;
+import by.javaguru.git.mergeexperience.topics.Module1Topics;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
@@ -27,12 +27,11 @@ public class Module1Servlet extends HttpServlet {
                     + value.getOrder() + "</td><td>"
                     + value.getTopic() + "</td><td>"
                     + value.getDesc()
-                    + "</td><td><a href='not_implemented_yet.html'>Подробнее</a>"
+                    + "</td><td><a href=''>Подробнее</a>"
                     + "</td></tr>");
 
         out.println("</table>");
 
-        out.println("<br/><a href=\"index.jsp\"'/'>&#10232;</a>");
         out.println("</body></html>");
     }
 

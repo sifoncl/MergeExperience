@@ -1,4 +1,4 @@
-package by.itacademy.git.mergeexperience.topics;
+package by.javaguru.git.mergeexperience.topics;
 
 public enum Module3Topics {
     HIBERNATE(1, "HIBERNATE", "Введение в HIBERNATE"),

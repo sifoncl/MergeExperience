@@ -1,4 +1,4 @@
-package by.itacademy.git.mergeexperience;
+package by.javaguru.git.mergeexperience;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -24,7 +24,6 @@ public class Module2Servlet extends HttpServlet {
         out.println("<html><body>");
         out.println("<h1>" + message + "</h1>");
 
-        out.println("<br/><a href=\"index.jsp\"'/'>&#10232;</a>");
         out.println("</body></html>");
     }
 
