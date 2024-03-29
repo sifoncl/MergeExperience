@@ -33,7 +33,8 @@ public class Module3Servlet extends HttpServlet {
                     + value.getDesc()
                     + "</td><td><a href=''>Подробнее</a>"
                     + "</td></tr>");
-
+        out.println("<a  href=\"module2\">Предыдущи модуль</a>");
+        out.println("<a  href=\"module4\">Следующий модуль</a>");
         out.println("</table>");
 
 
